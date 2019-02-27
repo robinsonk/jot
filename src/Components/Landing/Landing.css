@@ -1,0 +1,156 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    left: 0;
+    background-image: url('./hero.jpg');
+    background-size: 195%;
+    background-position: center;
+}
+
+.right {
+    right: 0;
+    background-color: #6A9194;
+}
+
+.landing-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 300px;
+    color: #6A9194;
+}
+
+button:hover {
+    background-color: #F1F1F1;
+}
+
+.Link {
+    color: #6A9194;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.Link:visited {
+    color: #6A9194;
+}
+
+.landing-p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.welcome-to {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: -30px;
+    background: #6A9194;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.jot {
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 10px;
+    animation: text2 3s 1;
+    
+}
+
+@keyframes text {
+    0% {
+        color: #6A9194;
+        margin-bottom: -100px;
+    }
+    30% {
+        letter-spacing: 10px;
+        margin-bottom: -100px;
+    }
+    85% {
+        letter-spacing: 3px;
+        margin-bottom: -30px;
+    }
+}
+
+@keyframes text2 {
+    0% {
+        color: #6A9194;
+    }
+    30% {
+        margin-left: -160px;
+
+    }
+    80% {
+        margin-left: -160px;
+
+    }
+    99% {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .landing {
+        top: 30%;
+        left: 50%;
+ 
+    }
+
+    .split {
+        height: 100%;
+        width: 100%;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .welcome-to {
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 3px;
+        margin-bottom: -20px;
+        background: #6A9194;
+        position: relative;
+        animation: none;
+    }
+
+    .jot {
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: 10px;
+        animation: text2 3s 1;
+    }
+
+    @keyframes text2 {
+        0% {
+            color: #6A9194;
+        }
+    }
+
+}

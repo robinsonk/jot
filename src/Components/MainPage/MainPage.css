@@ -1,0 +1,21 @@
+.main-page {
+    display: inline-block;
+    position: absolute;
+    margin-left: 380px;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    background-color: #F1F1F1;
+    background-size: cover;
+    overflow: auto;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .main-page {
+        display: block;
+        margin-left: 200px;
+        margin-top: 50px;
+        margin-right: auto;
+    }
+}

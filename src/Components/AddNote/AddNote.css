@@ -1,0 +1,34 @@
+label {
+    margin-left: -150px;
+}
+
+.note-content-input {
+    box-sizing: border-box;
+    width: 250px;
+    border-radius: 25px;
+    height: 200px;
+    border-color: #6a9194;
+    padding: 15px;
+    text-align: left;
+    /* position: relative; */
+    margin-top: 10px;
+}
+
+.note-page-header {
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .note-content-input {
+        height: 100px;
+    }
+    .note-page-header {
+        font-size: 20px;
+    }
+    .add-folder-container p {
+        margin-bottom: 35px;
+    }
+    .add-folder-container h2, .note-page-header {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,86 @@
+.add-folder-container {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #F1F1F1;
+    background-size: cover;
+    overflow: auto;
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-color: #F1F1F1;
+    background-size: cover;
+}
+
+.folder-name-input {
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #6A9194;
+    padding: 5px;
+    padding-left: 15px;
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    text-align: left;
+    color: white;
+    background-color: #6A9194;
+}
+
+::placeholder {
+    color: white;
+}
+
+.add-folder-container h2 {
+    font-size: 45px;
+    font-family: 'Georgia', serif;
+    font-weight: 500;
+    color: #6A9194;
+    text-align: center;
+}
+
+.add-folder-container p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: center;
+}
+
+.submit-folder {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #6A9194;
+    padding: 5px;
+    width: 250px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    color: white;
+    background-color: #6A9194;
+}
+
+.submit-folder:hover {
+    color: #F1F1F1;
+    background-color: #6A9194;
+}
+
+@media screen and (max-width: 500px) {
+    .note-content-input {
+        height: 100px;
+    }
+    .note-page-header {
+        font-size: 20px;
+    }
+    .add-folder-container p {
+        margin-bottom: 35px;
+    }
+    .add-folder-container h2, .note-page-header {
+        font-size: 35px;
+    }
+}
