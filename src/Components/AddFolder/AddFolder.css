@@ -63,6 +63,15 @@ form {
     border-radius: 25px;
     color: white;
     background-color: #6A9194;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.submit-folder:visited {
+    text-decoration: none;
 }
 
 .submit-folder:hover {

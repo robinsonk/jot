@@ -25,8 +25,8 @@ class Sidebar extends Component {
                             </button>
                         </Link>
                         <div className="folder-list">
+                        <p className="folder-nav-header"> MY FOLDERS </p>
                             <ul className="folder-list-ul">
-                                <p className="folder-nav-header"> MY FOLDERS </p>
                                 {this.context.folders.map(folder => 
                                 <NavLink to={`/folder/${folder.id}`}
                                     className="folder-list-item"

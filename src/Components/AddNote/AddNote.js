@@ -12,6 +12,7 @@ class AddNote extends Component {
             noteName: '',
             content: '',
             folderId: '',
+            folderName: '',
         }
     }
 
@@ -34,7 +35,9 @@ class AddNote extends Component {
         for (let i = 0; i < this.context.folders.length; i++) {
             if (folderName === this.context.folders[i].name) {
                 const selectedFolderId = this.context.folders[i].id;
-                this.setState({folderId: selectedFolderId})
+                const selectedFolderName = this.context.folders[i].name;
+                this.setState({folderId: selectedFolderId, folderName: selectedFolderName})
+
             }
         }
     }
@@ -46,6 +49,7 @@ class AddNote extends Component {
             name: this.state.noteName,
             id: Math.floor(Math.random() * 1000000),
             folderId: this.state.folderId,
+            folderName: this.state.folderName,
             content: this.state.content,
             date: new Date(),
         }
