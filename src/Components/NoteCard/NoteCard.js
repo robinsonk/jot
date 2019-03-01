@@ -11,15 +11,15 @@ class NoteCard extends Component {
     render() {
         return (
             <AppContext.Consumer>
-            {(context) => (
+            {(context) => ( 
                 <div className='note-container'>
-                    {this.context.noteCards.map(note => {
+                         {this.context.noteCards.map(note => {
                         return (
                         <div className="note-card" key={note.id}>
-                        <Link to={`folder/${note.folderId}`}>
+                        <Link exact to={`/folders/${note.folderId}`}>
                             <h4>{note.folderName}</h4>
                         </Link>
-                        <Link to={`notes/${note.id}`}>
+                        <Link exact to={`notes/${note.id}`}>
                             <h3>{note.name}</h3>
                         </Link>
                             <p className="content">{note.content}</p>

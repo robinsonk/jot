@@ -66,7 +66,7 @@ class Dropdown extends Component {
                 
                 <ul className={this.state.ulClassName} onClick={() => this.toggleDropdown()}>
                 {this.props.folders.map(folder => 
-                <div>
+                <div key={folder.id}>
                     <li key={folder.id} className="dropdown-list-item" id={folder.name} onClick={(e) => this.changeHeader(e)}>{folder.name}</li>
                 </div>
                 )}

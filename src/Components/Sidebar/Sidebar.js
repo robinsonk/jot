@@ -3,10 +3,35 @@ import './Sidebar.css'
 import { NavLink, Link } from 'react-router-dom'
 import { stack as Menu } from "react-burger-menu";
 import AppContext from '../../AppContext';
+import { Route, Switch } from 'react-router-dom'
 
 class Sidebar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            clickedFolder: ''
+        };
+    }
 
     static contextType = AppContext
+
+    handleClick = (event) => {
+
+        // for (let i = 0; i < this.context.folders.length; i++) {
+        //     if (this.context.folders[i].id === )
+        // }
+        // event.preventDefault();
+        // this.setState({
+        //     clickedFolder: e.target.key
+        // }
+        // , function() {
+        //     this.context.handleSelectedFolder()
+        // }
+        // )
+
+        const selectedId = event.target.id;
+        this.context.handleSelectedFolder(selectedId);
+    }
 
     render() {
         return (
@@ -28,10 +53,12 @@ class Sidebar extends Component {
                         <p className="folder-nav-header"> MY FOLDERS </p>
                             <ul className="folder-list-ul">
                                 {this.context.folders.map(folder => 
-                                <NavLink to={`/folder/${folder.id}`}
+                                <NavLink to={`/folders/${folder.id}`}
                                     className="folder-list-item"
                                     activeClassName="folder-list-item-active"
+                                    id={folder.id}
                                     key={folder.id}
+                                    onClick={(event) => this.handleClick(event)}
                                 >
                                     {folder.name}
                                 </NavLink>
@@ -56,7 +83,7 @@ class Sidebar extends Component {
                             {this.context.folders.map(folder => 
                             <NavLink to={`/folder/${folder.id}`}
                                 className="menu-item"
-                                acticeClassName="folderName-active"
+                                activeClassName="folderName-active"
                                 key={folder.id}
                             >
                                 {folder.name}

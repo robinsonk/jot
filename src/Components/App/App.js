@@ -14,7 +14,10 @@ class App extends Component {
 
   state = {
     noteCards: [],
-    folders: []
+    folders: [],
+    selectedFolder: null,
+    selectedFolderName: '',
+    selectedNotes: []
   }
 
   addFolder = (folder) => {
@@ -27,19 +30,36 @@ class App extends Component {
     console.log(this.state.folders)
   }
 
-  addNoteCard() {
+  deleteNote() {
 
   }
 
-  deleteNote() {
+  handleSelectedFolder = (selectedId) => {
+    for (let i = 0; i < this.state.folders.length; i ++) {
+      console.log(this.state.folders[i].id)
+        if (this.state.folders[i].id == selectedId) {
+            this.setState({
+              selectedFolder: selectedId,
+              selectedFolderName: this.state.folders[i].name
+            });
+        }else {
+          console.log('somethings broken')
+        }
+    }
+  }
 
+  handleSetState = () => {
+    
   }
 
   render() {
     const contextValue = {
       noteCards: this.state.noteCards,
       folders: this.state.folders,
-      addFolder: this.addFolder
+      selectedFolder: this.state.selectedFolder,
+      selectedNotes: this.state.selectedNotes,
+      selectedFolderName: this.state.selectedFolderName,
+      handleSelectedFolder: this.handleSelectedFolder
     }
 
     return (
@@ -65,11 +85,11 @@ class App extends Component {
                 component={MainPage}
               />
               <Route
-                path="/folderpage"
+                path="/folders/:folderId"
                 component={FolderPage}
               />
               <Route
-                path="/notepage"
+                path="/notes/:noteId"
                 component={NotePage}
               />
               <Route

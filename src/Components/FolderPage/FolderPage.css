@@ -1,0 +1,101 @@
+.main-page {
+    display: inline-block;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 15px;
+    /* top: 7%; */
+    /* transform: translate(-50%, -50%); */
+    background-color: #F1F1F1;
+    background-size: cover;
+    /* overflow: auto;
+    width: auto;
+    height: auto; */
+}
+
+.new-note-button a {
+    color: white;
+}
+
+.new-note-button a:hover {
+    color: #F1F1F1;
+}
+
+.new-note-button {
+    border-radius: 15px;
+    max-width: 120px;
+    height: 35px;
+    background-color: #6A9194;
+    color: white;
+}
+
+.new-note-button:hover {
+    background-color: #6A9194;
+}
+
+.note-container-folder {
+    margin-left: 300px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+
+.note-container {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.note-card {
+    position: relative;
+    box-sizing: border-box;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    min-width: 270px;
+    height: 300px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 1px 1px 3px 4px #8888880c;
+}
+
+.note-container h4 {
+    color: #6A9194;
+    margin-top: 0px;
+}
+
+.note-container h3 {
+    color: rgb(116, 73, 33);
+    margin-top: -10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.note-container p {
+    color: #6A9194;
+}
+
+.date {
+    margin-top: 110px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-page {
+        display: block;
+        margin-left: 50px;
+        margin-top: 80px;
+        margin-right: auto;
+    }
+}

@@ -12,6 +12,26 @@
     height: auto; */
 }
 
+.new-note-button a {
+    color: white;
+}
+
+.new-note-button a:hover {
+    color: #F1F1F1;
+}
+
+.new-note-button {
+    border-radius: 15px;
+    max-width: 120px;
+    height: 35px;
+    background-color: #6A9194;
+    color: white;
+}
+
+.new-note-button:hover {
+    background-color: #6A9194;
+}
+
 @media screen and (max-width: 768px) {
     .main-page {
         display: block;
