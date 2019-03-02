@@ -20,15 +20,17 @@ class AddFolder extends Component {
     }
 
     handleSubmit = (event) => {
-        // event.preventDefault();
         console.log('handleSubmit function has been called');
         const folder = {
             name: this.state.folderName,
             id: Math.floor(Math.random() * 1000000)
         }
-        console.log(folder);
         this.context.folders.push(folder)
         console.log(this.context.folders);
+        if (folder.name.length < 1) {
+            event.preventDefault();
+            alert("Please create a name for this folder");
+        }
     }
 
     render() {

@@ -14,7 +14,7 @@ class MainPage extends Component {
     render() {
         return (
             <div className="main-page">
-                <h2>
+                <h2 className="page-title">
                     {this.state.mainHeader}
                 </h2>
                 <button className="new-note-button">

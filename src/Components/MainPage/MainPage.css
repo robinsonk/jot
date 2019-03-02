@@ -1,15 +1,19 @@
 .main-page {
     display: inline-block;
     position: absolute;
-    margin-left: 250px;
+    margin-right: 50px;
     margin-top: 15px;
     /* top: 7%; */
     /* transform: translate(-50%, -50%); */
     background-color: #F1F1F1;
     background-size: cover;
-    /* overflow: auto;
-    width: auto;
-    height: auto; */
+}
+
+.page-title {
+    color: #6A9194;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Georgia', serif;
 }
 
 .new-note-button a {

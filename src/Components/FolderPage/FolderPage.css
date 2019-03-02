@@ -3,13 +3,13 @@
     position: absolute;
     margin-left: 250px;
     margin-top: 15px;
-    /* top: 7%; */
-    /* transform: translate(-50%, -50%); */
     background-color: #F1F1F1;
     background-size: cover;
-    /* overflow: auto;
-    width: auto;
-    height: auto; */
+}
+
+.folder-page {
+    width: 100%;
+    height: auto;
 }
 
 .new-note-button a {
@@ -32,63 +32,68 @@
     background-color: #6A9194;
 }
 
+.folder-page {
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .note-container-folder {
-    margin-left: 300px;
-    padding-top: 45px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-
-}
-
-.note-container {
-    padding-top: 45px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-}
-
-.note-card {
+    width: 270px;
     position: relative;
     box-sizing: border-box;
     margin-right: 35px;
-    margin-bottom: 40px;
+    margin-bottom: -5px;
+    margin-top: 45px;
     min-width: 270px;
     height: 300px;
-    background-color: white;
-    padding: 15px;
-    box-shadow: 1px 1px 3px 4px #8888880c;
+    box-shadow: 1px 1px 3px 4px #88888802;
 }
 
-.note-container h4 {
+.folder-page .note-container {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.folder-page .note-container h4 {
     color: #6A9194;
     margin-top: 0px;
 }
 
-.note-container h3 {
+.folder-page .note-container h3 {
     color: rgb(116, 73, 33);
     margin-top: -10px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
 
-.note-container p {
+.folder-page .note-container p {
     color: #6A9194;
 }
 
-.date {
+.folder-page .date {
     margin-top: 110px;
     position: absolute;
     bottom: 0;
     left: 5%;
 }
 
-.content {
+.folder-page .content {
     margin-top: 30px;
 }
 
+.folder-link {
+    color: #6A9194;
+    margin-top: -1000px;
+}
 
 
 @media screen and (max-width: 768px) {

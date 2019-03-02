@@ -19,14 +19,11 @@ class AddNote extends Component {
     static contextType = AppContext;
 
     updateNoteName = (noteName) => {
-        console.log("updateNoterName function has been called");
-        this.setState({noteName}, function() {
-            console.log(this.state.noteName)
+        this.setState({noteName}, function() {   
         })
     }
 
     updateNoteContent = (content) => {
-        console.log("updateNoteContent function has been called");
         this.setState({content})
     }
 
@@ -37,13 +34,19 @@ class AddNote extends Component {
                 const selectedFolderId = this.context.folders[i].id;
                 const selectedFolderName = this.context.folders[i].name;
                 this.setState({folderId: selectedFolderId, folderName: selectedFolderName})
-
             }
         }
     }
 
     handleSubmit = (event) => {
-        // event.preventDefault();
+        if (this.state.noteName.length === 0 || this.state.content.length === 0) {
+            event.preventDefault();
+            alert("Uh oh! Something's missing...please check your note title and content");
+        }
+        else if (this.state.folderId === '') {
+            event.preventDefault();
+            alert('Notes cannot be saved without a folder');
+        }
         console.log('handleSubmit function has been called');
         const note = {
             name: this.state.noteName,
@@ -53,9 +56,7 @@ class AddNote extends Component {
             content: this.state.content,
             date: new Date(),
         }
-        console.log(note);
         this.context.noteCards.push(note)
-        console.log(this.context.noteCards);
     }
 
     render() {
