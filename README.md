@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
 
-## Available Scripts
+## JOT.
 
-In the project directory, you can run:
+A fully-responsive front-end note app made with React/Router/Context API.
 
-### `npm start`
+## Summary
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A user can take quick notes and organize them in folders. The app aims to reduce typical note-app clutter through intuitive UX/UI design. JOT 1.0 functions as a fully-coded front-end prototype. As such, notes and folders will reset when the app is closed or refreshed.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### View Live
 
-### `npm test`
+View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technology Used
 
-### `npm run build`
+* JavaScript
+..*React
+..*React Router
+..*Context API for state management
+* CSS
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshots
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+JOT Hero/Landing
+![alt text](https://i.imgur.com/BktDShl.png "Jot Splash")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Add Folder/Note Pages
+![alt text](https://i.imgur.com/desAymb.png "Add Folder/Note Page")
 
-### `npm run eject`
+Note Page
+![alt_text](https://i.imgur.com/nZfglGd.png "Note Page")
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Mobile Views
+![alt text](https://i.imgur.com/NGPTD1f.png "Mobile Views")
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Create folders to store and categorize notes
+* Assign notes to folders during note creation
+* View all the notes at one time, or view in separate folders to decrease clutter
