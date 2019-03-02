@@ -8,6 +8,8 @@ A fully-responsive front-end note app made with React/Router/Context API.
 
 A user can take quick notes and organize them in folders. The app aims to reduce typical note-app clutter through intuitive UX/UI design. JOT 1.0 functions as a fully-coded front-end prototype. As such, notes and folders will reset when the app is closed or refreshed.
 
+---
+
 ### View Live
 
 View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
@@ -15,10 +17,12 @@ View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
 ### Technology Used
 
 * JavaScript
-..*React
-..*React Router
-..*Context API for state management
+* React
+* React Router
+* Context API for state management
 * CSS
+
+---
 
 ### Screenshots
 
@@ -37,7 +41,7 @@ Note Page
 Mobile Views
 ![alt text](https://i.imgur.com/NGPTD1f.png "Mobile Views")
 
-
+---
 
 ### Features
 
