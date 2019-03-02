@@ -6,7 +6,9 @@ A fully-responsive front-end note app made with React/Router/Context API.
 
 ## Summary
 
-A user can take quick notes and organize them in folders. The app aims to reduce typical note-app clutter through intuitive UX/UI design. JOT 1.0 functions as a fully-coded front-end prototype. As such, notes and folders will reset when the app is closed or refreshed.
+A user can take quick notes and organize them in folders. The app aims to reduce typical note-app clutter through intuitive UX/UI design. 
+
+JOT 1.0 functions as a fully-coded front-end prototype. As such, notes and folders will reset when the app is closed or refreshed.
 
 ---
 
