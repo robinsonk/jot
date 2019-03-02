@@ -25,14 +25,18 @@ View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
 JOT Hero/Landing
 ![alt text](https://i.imgur.com/BktDShl.png "Jot Splash")
 
+
 Add Folder/Note Pages
 ![alt text](https://i.imgur.com/desAymb.png "Add Folder/Note Page")
+
 
 Note Page
 ![alt_text](https://i.imgur.com/nZfglGd.png "Note Page")
 
+
 Mobile Views
 ![alt text](https://i.imgur.com/NGPTD1f.png "Mobile Views")
+
 
 
 ### Features
