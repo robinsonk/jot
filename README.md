@@ -1,6 +1,6 @@
 View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
 
-## JOT.
+# JOT.
 
 A fully-responsive front-end note app made with React/Router/Context API.
 
