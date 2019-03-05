@@ -1,4 +1,4 @@
-View the live app [here](https://wonderful-jepsen-6a6204.netlify.com/)
+View the live app [here](https://jot-noteapp.netlify.com/)
 
 # JOT.
 
